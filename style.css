@@ -1,0 +1,79 @@
+
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#container{
+    
+    width: fit-content;
+    padding: 10px 25px;
+}
+#dates{
+    display: flex;
+    justify-content: space-between;
+}
+#detail{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+#date{
+    display: block;
+}
+#foreCastCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 1fr;
+    gap: 20px;
+    border-bottom: solid 1px black;
+}
+#foreCastConatiner{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 247, 247, 0.599);
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+#board{
+    color: black;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-columns: 1fr 0.75fr 0.75fr 1fr;
+    padding: 15px 35px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 5px 5px 15px 0px;
+}
+#board_date{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+}
+#board_temp{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#location{
+    height: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+}
+#button{
+    height: 24px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
