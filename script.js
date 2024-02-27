@@ -6,7 +6,7 @@ function location_value(){
 }
 
 async function getFromApi(location_value){
-    let fetchUrl = await fetch(`http://api.weatherapi.com/v1/current.json?key=253bbcc79f1b41a4ba065849242302&q=${location_value}&aqi=no`, {mode : 'cors'})
+    let fetchUrl = await fetch(`https://api.weatherapi.com/v1/current.json?key=253bbcc79f1b41a4ba065849242302&q=${location_value}&aqi=no`, {mode : 'cors'})
     if(fetchUrl.status == 200){
         let fetchJson = await fetchUrl.json()
         
@@ -50,7 +50,7 @@ function createCard(place){
 }
 
 async function foreCast(location_value){
-    let fetchUrl = await fetch (`http://api.weatherapi.com/v1/forecast.json?key=253bbcc79f1b41a4ba065849242302&q=${location_value}&days=7&aqi=no&alerts=no`, {mode: 'cors'})
+    let fetchUrl = await fetch (`https://api.weatherapi.com/v1/forecast.json?key=253bbcc79f1b41a4ba065849242302&q=${location_value}&days=7&aqi=no&alerts=no`, {mode: 'cors'})
     if(fetchUrl.status == 200){
         let fetchJson = await fetchUrl.json()
         console.log(fetchJson)
